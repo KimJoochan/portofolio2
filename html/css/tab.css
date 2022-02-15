@@ -747,7 +747,7 @@
     }
 
     #tab_wrap > li {
-        height: 12.5%;
+        height: 16%;
     }
 
     /*자기소개 모바일일때*/
@@ -758,8 +758,8 @@
 
     #tab_profile_list {
         width: auto;
-        margin-left: 15%;
-        margin-top: 40%;
+        margin-left: 5%;
+        margin-top: 30%;
     }
 
     #tab_profile_list > li {

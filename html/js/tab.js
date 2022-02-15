@@ -124,7 +124,7 @@ $(document).ready(function () {
             opacity: 0
         });
         if (k == 0) {
-            $('#prog').html('PHOTOSHOP');
+            $('#prog').html('Node.js');
             $('.counter').animateNumber({
                 number: 70
             }, 1000);
@@ -137,7 +137,7 @@ $(document).ready(function () {
                 });
             }, 500);
         } else if (k == 1) {
-            $('#prog').html('ILLUSTRATOR');
+            $('#prog').html('Vue.js');
             $('.counter').animateNumber({
                 number: 73
             }, 1000);
@@ -150,7 +150,7 @@ $(document).ready(function () {
                 });
             }, 500);
         } else if (k == 2) {
-            $('#prog').html('HTML');
+            $('#prog').html('FrontEnd');
             $('.counter').animateNumber({
                 number: 90
             }, 1000);
@@ -163,7 +163,7 @@ $(document).ready(function () {
                 });
             }, 500);
         } else if (k == 3) {
-            $('#prog').html('CSS');
+            $('#prog').html('CI(php)');
             $('.counter').animateNumber({
                 number: 87
             }, 1000);
@@ -176,7 +176,7 @@ $(document).ready(function () {
                 });
             }, 500);
         } else if (k == 4) {
-            $('#prog').html('JQUERY');
+            $('#prog').html('SQL');
             $('.counter').animateNumber({
                 number: 85
             }, 1000);
