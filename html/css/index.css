@@ -1,0 +1,1222 @@
+@charset 'utf-8';
+
+@media all and (min-width:1200px) {
+    #tab_display {
+        display: none;
+    }
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    /*pc퀵 메뉴 설명*/
+    #quick_explain {
+        width: 100vw;
+        width: 100%;
+        height: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+
+    #quick_explain > .center_wrap {
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    #center_mask {
+        width: 100%;
+        height: auto;
+        float: left;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #quick_ex {
+        width: 300%;
+        height: auto;
+        float: left;
+        position: relative;
+    }
+
+    #quick_ex > li {
+        width: 33.3%;
+        height: auto;
+        float: left;
+    }
+
+    #quick_ex > li > img {
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+
+    #quci_buts {
+        width: 75px;
+        height: 15px;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        margin-left: -37.5px;
+    }
+
+    #quci_buts > li {
+        width: 15px;
+        height: 15px;
+        float: left;
+        margin-right: 10px;
+        border-radius: 15px;
+        background-color: #eee;
+        cursor: pointer;
+    }
+
+    #quci_buts > li:nth-child(3) {
+        margin-right: 0;
+    }
+
+    #quick_close {
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        width: 60px;
+        height: 20px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .quick_arrow {
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 20px;
+        font-weight: 600;
+        position: absolute;
+        top: 50%;
+        z-index: 9;
+        color: #eaeaea;
+        margin-top: -30px;
+        cursor: pointer;
+    }
+
+    .quick_arrow.left {
+        left: 15px;
+    }
+
+    .quick_arrow.right {
+        right: 15px;
+    }
+
+    #quci_buts > li.quci_on {
+        background-color: #ffc5cf;
+    }
+
+    /*pc 퀵 드래그할 버튼*/
+    #quick_but {
+        position: fixed;
+        top: -25px;
+        left: 50%;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        transform: translateX(-50px);
+        background-color: #f47bff;
+        z-index: 9;
+        cursor: pointer;
+    }
+
+    /*pc_퀙 드래그시 나타날 화면*/
+    #pc_quick {
+        width: 1200px;
+        height: 720px;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        background-color: rgba(255, 255, 255, 0.75);
+        z-index: 9;
+        transform: translateX(-50%);
+        background: linear-gradient(to right, #dfcaff, #ffcaf8);
+        display: none;
+    }
+
+    #pc_quick > .center_wrap {
+        height: 720px;
+    }
+
+    #qui_title {
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        float: left;
+        font-size: 40px;
+        margin-top: 50px;
+    }
+
+    #thank {
+        width: 100%;
+        text-align: left;
+        margin-left: 30px;
+        float: left;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    #type_name {
+        width: 100%;
+        float: left;
+        height: 30px;
+        margin-top: 30px;
+    }
+
+    #type_name > span {
+        display: block;
+        width: auto;
+        height: 30px;
+        float: left;
+        line-height: 30px;
+        text-align: left;
+        margin-left: 246px;
+        font-size: 30px;
+    }
+
+    #type_name input {
+        height: 30px;
+        width: auto;
+        float: left;
+        margin-left: 20px;
+    }
+
+    #type_number {
+        width: 100%;
+        height: 30px;
+        float: left;
+        margin-top: 30px;
+    }
+
+    #type_number > span {
+        display: block;
+        width: auto;
+        height: 30px;
+        float: left;
+        line-height: 30px;
+        text-align: left;
+        margin-left: 150px;
+        font-size: 30px;
+    }
+
+    #type_number b {
+        display: block;
+        width: 15px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        float: left;
+    }
+
+    #type_number select {
+        display: block;
+        width: auto;
+        height: 30px;
+        float: left;
+        margin-left: 15px;
+    }
+
+    #type_number input {
+        display: block;
+        box-sizing: border-box;
+        width: auto;
+        height: 30px;
+        float: left;
+        text-align: center;
+    }
+
+    textarea {
+        width: 430px;
+        height: 350px;
+        float: left;
+        margin-left: 356px;
+        margin-top: 30px;
+        text-align: left;
+    }
+
+    #resume {
+        width: 120px;
+        height: 30px;
+        position: absolute;
+        bottom: 70px;
+        right: 250px;
+    }
+
+    #resume > a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 30px;
+        background-color: #eeefff;
+    }
+
+    #submit {
+        width: 100px;
+        height: 30px;
+        position: absolute;
+        bottom: 70px;
+        right: 100px;
+        text-align: center;
+        background-color: #eeefff;
+    }
+
+    #close_but {
+        position: absolute;
+        top: 0;
+        right: 30px;
+        width: 30px;
+        font-size: 14px;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+        background-color: #ff2400;
+        color: #eaeaea;
+        border: 1px solid black;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    /*퀙페이지끝*/
+    .center_wrap {
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    /*전체의 마스크영역,마우스휠을 위한 보여주는 영역*/
+    #all_mask {
+        width: 100%;
+        height: 100%;
+        float: left;
+    }
+
+    /*전체의 영역의 메뉴바*/
+    nav {
+        width: 100%;
+        height: auto;
+        position: fixed;
+        z-index: 9;
+        top: 0;
+        left: 50%;
+        background-color: rgba(255, 255, 255, 0.75);
+        transform: translateX(-50%);
+    }
+
+    #all_menu {
+        width: 1200px;
+        height: 70px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    #all_menu > li {
+        flex-grow: 1;
+        height: 70px;
+        text-align: center;
+        line-height: 70px;
+        font-size: 20px;
+        cursor: pointer;
+        font-weight: 600;
+        box-sizing: border-box;
+    }
+
+    .on {
+        color: #ff2400;
+    }
+
+    #all_menu > li:nth-child(3).on,
+    #all_menu > li:nth-child(4).on {
+        color: #007eff;
+    }
+
+    #all_menu > li:nth-child(6).on,
+    #all_menu > li:nth-child(7).on {
+        color: #fd9eb7;
+    }
+
+    /*전체의 영역의 와프,마우스휠로 인해 움직이는 전체 와프*/
+    #all_wrap {
+        width: 800%;
+        height: 100%;
+        float: left;
+        position: relative;
+    }
+
+    /*전체의 와프의 세부적인 내용영역들*/
+    #all_wrap > li {
+        width: 12.5%;
+        height: 100%;
+        float: left;
+        overflow: hidden;
+    }
+    #all_wrap > li#renewal>.title{
+        font-size: 40px;
+        margin-top: 120px;
+        font-weight: 600;
+    }
+
+    .title {
+        width: 100%;
+        text-align: center;
+        font-size: 70px;
+        color: #ff2400;
+        position: relative;
+    }
+
+    .line {
+        height: 2px;
+        background-color: #ff2400;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #home {
+        background: url(../imgs/display_1.jpg) no-repeat left;
+        background-size: cover;
+        position: relative;
+    }
+
+    #home .title {
+        font-size: 100px;
+    }
+
+    #home_title > .title_sub {
+        width: 100%;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 100;
+        color: #ff7140;
+    }
+
+    /*첫번째화면*/
+    #home_title {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        overflow: hidden;
+    }
+
+    /*첫번째화면의 타이틀의 언더라인*/
+    #home .line {
+        width: 500px;
+    }
+
+    .up_mvig {
+        position: relative;
+        top: 200px;
+    }
+
+    #leave1 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(../imgs/leaves_1.png) center center;
+        background-size: contain;
+        overflow: hidden;
+    }
+
+    #leave2 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(../imgs/leaves_2.png) center center;
+        background-size: contain;
+        overflow: hidden;
+    }
+
+    /*두번째화면*/
+    #introduce {
+        background: url(../imgs/display_2.jpg) no-repeat left;
+        background-size: cover;
+    }
+
+    #introduce .all_tie {
+        margin-top: 78px;
+    }
+
+    .all_tie {
+        margin-top: 78px;
+        float: left;
+        width: 100%;
+    }
+
+    /*두번째 화면의 타이틀의 언더라인*/
+    #introduce .line {
+        width: 400px;
+    }
+
+    #intro_list {
+        width: 55%;
+        float: left;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 110px;
+    }
+
+    #intro_list > li {
+        width: 100%;
+        text-align: left;
+        font-size: 30px;
+        float: left;
+        line-height: 30px;
+        margin-bottom: 40px;
+    }
+
+    .list_img {
+        width: 30px;
+        height: 30px;
+        float: left;
+        margin-right: 15px;
+        background: url(../imgs/list_leaf.png) no-repeat center center;
+        background-size: cover;
+    }
+
+    /*세번째화면*/
+    #skill {
+        background: url(../imgs/display_3replace.jpg) no-repeat left;
+        background-size: cover;
+        position: relative;
+    }
+
+    #skill .title {
+        color: #eaeaea;
+    }
+
+    #skill .line {
+        width: 600px;
+        background-color: #eaeaea;
+    }
+
+    #snowdown1 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(../imgs/snowdo1.png);
+    }
+
+    #snowdown2 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(../imgs/snowdo2.png);
+    }
+
+    /*스킬보여주는 영역*/
+    #skill_mask {
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #skill_chart {
+        width: 100%;
+        height: 120px;
+        padding: 0 136px;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 0;
+    }
+
+    #skill_chart > li {
+        width: 120px;
+        height: 100%;
+        float: left;
+        margin-right: 76px;
+        position: relative;
+    }
+    #skill_chart > li>.txt{
+        margin: 0;
+        width: 100%;
+        height: auto;
+        line-height: 100px;
+        float: left;
+        text-align: center;
+    }
+
+
+    #skill_chart > li:last-child {
+        margin-right: 0;
+    }
+
+    .graph {
+        width: 100px;
+        height: 400px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .graph > img {
+        width: 100%;
+        height: 100%;
+        float: left;
+        opacity: 0;
+    }
+
+    .reward {
+        font-size: 36px;
+        text-align: center;
+        width: 100%;
+        float: left;
+        color: #eaeaea;
+        margin-top: -440px;
+    }
+
+    #renewal {
+        background: url(../imgs/display_4.jpg) no-repeat left;
+        background-size: cover;
+    }
+
+    #renewal > .title {
+        color: #eaeaea;
+        margin-top: 78px;
+    }
+
+    #renewal .line {
+        width: 500px;
+        background-color: #eaeaea;
+    }
+
+    #pc_mask {
+        width: 75%;
+        height: auto;
+        float: left;
+        margin-left: 12.5%;
+        margin-top: 50px;
+        position: relative;
+    }
+
+    #renchart {
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+
+    #renchart > li {
+        width: 50%;
+        height: auto;
+        float: left;
+        position: relative;
+    }
+
+    #renchart > li > img {
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+
+    /*리뉴얼 하기전의 설명들*/
+    #renewal_explain {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        background-color: #333333;
+    }
+
+    #renewal_explain > li {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 30px;
+        display: none;
+        box-sizing: border-box;
+    }
+
+    /*리뉴얼 하기전의 설명중 타이틀*/
+    .renewal_title {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        color: #cccccc;
+    }
+
+    .renewalbe_sub > li {
+        width: 100%;
+        text-align: left;
+        color: #eaeaea;
+        float: left;
+        margin-top: 20px;
+    }
+
+    /*리뉴얼 전후의 색상구분표영역*/
+    .renewalbe_sub p {
+        width: auto;
+        height: auto;
+        float: left;
+        color: #eeeeee;
+    }
+
+    .renewalbe_sub span {
+        display: block;
+        width: auto;
+        height: auto;
+        float: right;
+        color: #eeeeee;
+    }
+
+    /*리뉴얼 전후의 색상구분표에서 span태그에 hover시 나타날색상박스*/
+    #color_box {
+        width: 20px;
+        height: 20px;
+        position: fixed;
+        z-index: 99;
+    }
+
+    .blank {
+        width: 70px;
+        height: 18px;
+        float: left;
+    }
+
+    .go_before {
+        width: 80px;
+        height: 20px;
+        text-align: center;
+        float: right;
+        font-size: 12px;
+        border: 0;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+
+    /*리뉴얼한후의 설명*/
+    #renewalafter_explain {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        background-color: #333333;
+    }
+
+    #renewalafter_explain > li {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    .after_reference {
+        width: auto;
+        height: auto;
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+    }
+
+    .go_after {
+        width: 80px;
+        height: 20px;
+        margin-right: 10px;
+        font-size: 12px;
+        text-align: center;
+        border: 0;
+        float: left;
+        cursor: pointer;
+    }
+
+    .go_after:last-child {
+        margin-right: 0;
+    }
+
+    /*리뉴얼 아래의 버튼*/
+    #pc_dot {
+        width: 165px;
+        height: 30px;
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 9;
+    }
+
+    #pc_dot > li {
+        width: 30px;
+        height: 30px;
+        float: left;
+        border-radius: 15px;
+        margin-right: 15px;
+        cursor: pointer;
+        background-color: #cccccc;
+    }
+
+    #pc_dot > li.dot_on {
+        background-color: #333333;
+    }
+
+    #pc_dot > li:nth-child(4) {
+        margin: 0;
+    }
+
+    /*다섯번째화면*/
+    #lin {
+        position: relative;
+    }
+
+    #thrid_pic {
+        width: 66%;
+        position: absolute;
+        right: 0;
+        height: 100%;
+        background: url(../imgs/display_5_1.png) no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    #lin > .title {
+        color: #2d2d2d;
+        font-size: 90px;
+        text-align: left;
+        float: none;
+        margin-left: 50px;
+        font-weight: 900;
+        margin-top: 10%;
+    }
+
+    #lin .line {
+        left: 404px;
+        width: 245px;
+    }
+
+    #lin_list {
+        width: 30%;
+        margin-top: 80px;
+    }
+
+    #lin_list > li {
+        width: 100%;
+        text-align: right;
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 65px;
+        color: #2d2d2d;
+    }
+
+    /*수상내역*/
+    #reward {
+        background: url(../imgs/lawn.jpg) no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #list_rew {
+        width: 1140px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 110px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #list_rew > li {
+        flex-basis: 360px;
+        height: 360px;
+        background-color: #efefef;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: 50px;
+        box-shadow: 1px 1px 3px #333;
+    }
+
+    #list_rew > li > h2 {
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    #list_rew > li > h2.cap {
+        font-size: 1.625rem;
+        font-weight: 600;
+    }
+
+    #list_rew > li > img {
+        width: 50%;
+        height: auto;
+        position: absolute;
+        top: -30%;
+    }
+
+    #list_rew > li:last-child {
+        margin-top: -70px;
+    }
+
+    /*  #reward * {
+        font-size: 1.7rem;
+    }
+
+    
+
+    #list_rew > img {
+        width: 40%;
+        position: absolute;
+        top: -110px;
+        left: 50%;
+        transform: translateX(-50%);
+    }*/
+
+    /*슬로건 화면*/
+    #slogan {
+        background: url(../imgs/display_6.jpg) no-repeat left;
+        background-size: cover;
+    }
+
+    #slogan .all_tie {
+        margin: 0;
+    }
+
+    #slogan_title {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 50%;
+        transform: translateY(-75%);
+    }
+
+    #slogan_title > .title {
+        font-size: 18px;
+        text-align: center;
+        color: #fd9eb7;
+        margin-top: 250px;
+    }
+
+    #slogan .line {
+        width: 150px;
+        top: 85%;
+        height: 5px;
+        background-color: #fd9eb7;
+    }
+
+    #slo_sub {
+        text-align: center;
+        width: 100%;
+        font-size: 90px;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    #slo_sub_sub {
+        text-align: center;
+        width: 100%;
+        font-size: 18px;
+        margin-top: 30px;
+        color: #555555;
+    }
+
+    /*일곱번째 화면*/
+    #contact {
+        position: relative;
+    }
+
+    #con_pic {
+        width: 66.6%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: url(../imgs/display_7replace1.jpg) no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    #contact > .title {
+        color: #2d2d2d;
+        font-size: 90px;
+        text-align: left;
+        float: left;
+        margin-left: 65px;
+        font-weight: 900;
+        margin-top: 15%;
+    }
+
+    #contact .line {
+        position: absolute;
+        left: -100%;
+        width: 100px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #windy {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50px;
+        background: url(../imgs/windy1.png);
+        background-size: contain;
+        animation-name: your;
+        animation-duration: 4s;
+        animation-timing-function: ease-in;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+
+    #windy_1 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 50px;
+        ;
+        right: 0px;
+        background: url(../imgs/windy2.png);
+        background-size: contain;
+        animation-name: my;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes my {
+        from {
+            right: 70%;
+        }
+
+        50% {
+            bottom: 100px;
+        }
+
+        to {
+            right: -10%;
+        }
+    }
+
+    @keyframes your {
+        from {
+            left: 0;
+        }
+
+        50% {
+            top: 100px;
+        }
+
+        to {
+            left: 80%;
+        }
+    }
+
+    #contac_list {
+        width: 30%;
+        float: left;
+        margin-left: 115px;
+        margin-top: 80px;
+    }
+
+    #contac_list > li {
+        width: 100%;
+        text-align: left;
+        font-size: 30px;
+        float: left;
+        line-height: 30px;
+        margin-bottom: 65px;
+        color: #2d2d2d;
+    }
+
+    address {
+        width: 100%;
+        text-align: left;
+        font-style: normal;
+        line-height: 100px;
+        float: left;
+        margin-left: 115px;
+    }
+}
+
+@media all and (min-height:664px) {
+    #renewalafter_explain {
+        height: 110%;
+    }
+}
+
+@media all and (max-width:1410px) and (min-width:1200px) {
+
+    /*노트환경에서의 변화*/
+    .all_tie {
+        font-size: 50px;
+    }
+
+    #skill_mask {
+        width: 100%;
+        height: 520px;
+    }
+
+    #skill_chart {
+        width: 100%;
+        height: 100px;
+        position: static;
+        padding: 0;
+        margin-top: 365px;
+    }
+
+    #skill_chart > li {
+        width: 100px;
+        height: 100%;
+        background-size: cover;
+        margin-right: 14.5%;
+    }
+
+    .reward {
+        margin-top: -360px;
+    }
+
+    .graph {
+        width: 70%;
+        height: auto;
+    }
+
+    .graph > img {
+        height: auto;
+    }
+
+    /*introdcue의 내용 글씨 크기 변환*/
+    #intro_list > li {
+        font-size: 28px;
+    }
+
+    #renewal_explain {
+        height: 100%;
+    }
+
+    /*자격증 화면 전환*/
+    #lin > .title {
+        margin-top: 10%;
+        font-size: 80px;
+        margin-right: 10.5%;
+    }
+
+    #lin_list {
+        margin-top: 30px;
+        margin-right: 10.5%;
+    }
+
+    #lin_list > li {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    /*스킬창에서의 전환*/
+    #pc_mask {
+        margin-top: 30px;
+    }
+
+    #pc_dot {
+        width: 120px;
+        height: 25px;
+        bottom: 4.1%;
+    }
+
+    #pc_dot > li {
+        width: 25px;
+        height: 25px;
+        float: left;
+        margin-right: 6px;
+    }
+
+    #pc_dot > li:last-child {
+        margin-right: 0;
+    }
+
+    /*리뉴얼에서 전환*/
+    .after_reference {
+        bottom: 15px;
+    }
+
+    /*contact me 전환*/
+    #contact > .title {
+        margin-top: 10%;
+        font-size: 80px;
+        margin-left: 5.5%;
+    }
+
+    #contac_list {
+        margin-top: 30px;
+        margin-left: 5.5%;
+    }
+
+    #contac_list > li {
+        margin-bottom: 45px;
+        font-size: 20px;
+    }
+
+    .all_tie {
+        font-size: 70px;
+    }
+
+    address {
+        margin-left: 5%;
+    }
+}
+
+@media all and (max-width:1322px) and (min-width:1200px) {
+
+    /*introdcue의 내용 글씨 크기 변환*/
+    #intro_list > li {
+        font-size: 26px;
+    }
+
+    #lin_list > li {
+        font-size: 18px;
+    }
+
+    #renewalafter_explain {
+        height: 130%;
+    }
+}
+
+@media all and (max-width:1236px) and (min-width:1200px) {
+
+    /*introdcue의 내용 글씨 크기 변환*/
+    #intro_list > li {
+        font-size: 24px;
+    }
+
+    #contac_list > li {
+        font-size: 20px;
+    }
+}

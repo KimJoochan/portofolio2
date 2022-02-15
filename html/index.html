@@ -1,0 +1,559 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>김주찬의 PORTOFOLIO</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link href="css/reset.css" type="text/css" rel="stylesheet">
+    <link href="css/swiper.css" type="text/css" rel="stylesheet">
+    <link href="css/index.css" type="text/css" rel="stylesheet">
+    <link href="css/tab.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.transit.min.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/jquery.animateNumber.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/tab.js"></script>
+</head>
+
+<body>
+    <div id="all_mask">
+        <nav id="nav">
+            <ul id="all_menu">
+                <li class="on">HOME</li>
+                <li>INTRODUCE</li>
+                <li>SKILLS</li>
+                <li>PORTOFOLIO</li>
+                <li>자격증</li>
+                <li>수상내역</li>
+            </ul>
+        </nav>
+        <div id="pc_quick">
+            <div class="center_wrap">
+                <h3 id="qui_title">Quick Contact Me</h3>
+                <p id="thank">Thank you for visiting my portofolio</p>
+                <p id="type_name"><span>Name:</span> <input type="text" placeholder="한글성명"></p>
+                <p id="type_number"><span>Tele Number:</span><select>
+                        <option>010</option>
+                        <option>051</option>
+                        <option>02</option>
+                    </select><b>-</b><input type="tel" maxlength="4"><b>-</b><input type="tel" maxlength="4"></p>
+                <textarea placeholder="전달할 내용을 입력해주십시오."></textarea>
+                <p id="resume"><a href="imgs/resume.doc" target="_blank">이력서 다운로드</a></p>
+                <input type="submit" value="전송하기" id="submit">
+            </div>
+        </div>
+        <ul id="all_wrap">
+            <li id="home">
+                <div id="home_title">
+                    <h2 class="title eng up_mvig">Portofolio
+                        <div class="line up_mvig"></div>
+                    </h2>
+                    <h3 class="title_sub up_mvig">Kim Joo Chan</h3>
+
+                </div>
+                <div id="leave1"></div>
+                <div id="leave2"></div>
+            </li>
+            <li id="introduce">
+                <h2 class="title eng all_tie">INTRODUCE
+                    <div class="line"></div>
+                </h2>
+                <ul id="intro_list">
+                    <li>
+                        <div class="list_img"></div>이름:김주찬
+                    </li>
+                    <li>
+                        <div class="list_img"></div>직업 : 웹프로그래머
+                    </li>
+                    <li>
+                        <div class="list_img"></div>직장 : 옴니커뮤니케이션
+                    </li>
+                    <li>
+                        <div class="list_img"></div>주요업무 : 홈페이지 제작, 유지 보수
+                    </li>
+                    <li>
+                        <div class="list_img"></div>경력 : 2020.07.11 ~ 현재(2022.02.15)
+                    </li>
+                    
+                </ul>
+            </li>
+            <li id="skill">
+                <div id="snow1"></div>
+                <div id="snow2"></div>
+                <div id="snowdown1" style="display: none;"></div>
+                <div id="snowdown2" style="display: none;"></div>
+                <h2 class="title eng all_tie">Program skills
+                    <div class="line"></div>
+                </h2>
+                <div class="center_wrap">
+                    <div id="skill_mask">
+                        <ul id="skill_chart">
+                            <li>
+                                <h1 class="txt">Node.js</h1>
+                                <div class="graph">
+                                    <img src="imgs/graph1.png">
+                                    <h3 class="reward">??</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <h1 class="txt">Vue.js</h1>
+                                <div class="graph">
+                                    <img src="imgs/graph2.png">
+                                    <h3 class="reward">??</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <h1 class="txt">FrontEnd</h1>
+                                <div class="graph">
+                                    <img src="imgs/graph.png">
+                                    <h3 class="reward">??</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <h1 class="txt">CI(php)</h1>
+                                <div class="graph">
+                                    <img src="imgs/graph3.png">
+                                    <h3 class="reward">??</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <h1 class="txt">SQL</h1>
+                                <div class="graph">
+                                    <img src="imgs/graph5.png">
+                                    <h3 class="reward">??</h3>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li id="renewal">
+                <h2 class="title eng all_tie">홈페이지 리뉴얼 연습한 페이지
+                    <div class="line"></div>
+                </h2>
+                <div id="color_box"></div>
+                <div id="pc_mask">
+                    <ul id="renchart">
+                        <li><img src="imgs/pc_renwal_1be.jpg">
+                            <ul id="renewal_explain">
+                                <li id="hosp">
+                                    <h4 class="renewal_title">리뉴얼 전</h4>
+                                    <ul class="renewalbe_sub">
+                                        <li>선정한 홈페이지:아주대학교 병원</li>
+                                        <li class="pc_reasaon">선정한 이유: 1.최신 웹표준에 맞지않는 기능들을 사용<br>
+                                            <p class="blank"></p>2.첫화면의 대표적인 내용이 없고 클릭해서 들어가야
+                                            <p class="blank">나옴
+                                        </li>
+                                        <li>
+                                            <p>주조색:로고의 푸른색 계열<span class="origin_color">(#0464b1)</span></p>
+                                        </li>
+                                        <li>
+                                            <p>보조색:<span class="sub_color">회색계열</span></p>
+                                        </li>
+                                        <li>개선해야할 사항:1.제이쿼리 사용으로 배너 제작<br />
+                                            <p class="blank"></p>2.세로 스크롤바를 사용해서 대표적인 내용표현<br />
+                                            <p class="blank"></p>3.기본 웹의 크기를 1920~1200에 맞는 페이지제작<br />
+                                            <p class="blank"></p>4. nav의 내용중 획심을 첫화면에 중요도순으로 배치
+                                        </li>
+                                    </ul>
+                                    <input type="button" class="go_before" value="바로가기">
+                                </li>
+                                <li id="youngsun">
+                                    <h4 class="renewal_title">리뉴얼 전</h4>
+                                    <ul class="renewalbe_sub">
+                                        <li>선정한 홈페이지:용성토건건설회사</li>
+                                        <li class="pc_reasaon">선정한 이유: 1.최신 웹표준에 맞지않는 기능들을 사용<br>
+                                            <p class="blank"></p>2.제이쿼리형식이 아닌 플래시사용<br>
+                                            <p class="blank"></p>3.첫 화면에 보여주는 내용들이 부족
+                                        </li>
+                                        <li>
+                                            <p>주조색:로고의 푸른색 계열<span class="origin_color">(#0464b1)</span></p>
+                                        </li>
+                                        <li>
+                                            <p class="sub_color">포인트 색:<span>(#de3e4a)</span></p>
+                                        </li>
+                                        <li>개선해야할 사항:1.플래시를 제거하고 제이쿼리 사용<br>
+                                            <p class="blank"></p>2.세로 스크롤바를 사용해서 대표적인 내용표현<br>
+                                            <p class="blank"></p>3.기본 웹의 크기를 1920~1200에 맞는 페이지제작<br>
+                                            <p class="blank"></p>4. nav의 틀이 있는 블럭 구분선을 제거
+                                        </li>
+                                    </ul>
+                                    <input type="button" class="go_before" value="바로가기">
+                                </li>
+                                <li id="music">
+                                    <h4 class="renewal_title">리뉴얼 전</h4>
+                                    <ul class="renewalbe_sub">
+                                        <li>선정한 홈페이지:경희실용음악학원</li>
+                                        <li>
+                                            선정한 이유: 1.메인화면에 보여주는 예시가 전부다 배너로 제작<br>
+                                            <p class="blank"></p>2.반응형 웹표준에 만들어져있지 않음<br>
+                                            <p class="blank"></p>3. 사이드메뉴 클릭시 전체적인 레이아웃이 옆으로
+                                            <p class="blank"></p>밀려나감
+                                        </li>
+                                        <li>
+                                            <p>주조색:<span class="origin_color">회색계열</span></p>
+                                        </li>
+                                        <li>
+                                            <p>포인트색:노란색계열<span class="sub_color">(#fcc125)</span></p>
+                                        </li>
+                                        <li>개선해야할 사항:1.웹표준에 맞게 반응형 적용<br>
+                                            <p class="blank"></p>2.메뉴를 클릭하지 않고 맛보기로 볼수있도록 구성<br>
+                                            <p class="blank"></p>3.기본 웹 크기를 3000~1920에서 가로레이아웃구성<br>
+                                            <p class="blank"></p>4. 메인배너의 필요없는 것을 줄여서 최소화 하기
+                                        </li>
+                                    </ul>
+                                    <input type="button" class="go_before" value="바로가기">
+                                </li>
+                                <li id="cocoelect">
+                                    <h4 class="renewal_title">리뉴얼 전</h4>
+                                    <ul class="renewalbe_sub">
+                                        <li>선정한 홈페이지:쿠쿠전자 밥솥광고</li>
+                                        <li>
+                                            선정한 이유: 1.웹표준에 맞지않는 반응형이 미 적용<br>
+                                            <p class="blank"></p>
+                                            2.모두가 이미지로 제작되어 있음<br>
+                                            <p class="blank">
+                                                3.쿠쿠전자 홈페이지에서 상세보기로 들어가야함
+                                        </li>
+                                        <li>
+                                            <p>주조색<span class="origin_color">회색계열</span></p>
+                                        </li>
+                                        <li>
+                                            <p>보조색 색:빨간색계열<span class="sub_color red">(#ff2400)</span></p>
+                                            <p>,파란색계열<span class="sub_color blue">(#3333ff)</span></p>
+                                        </li>
+                                        <li>개선해야할 사항:1.웹표준에 맞게 반응형 적용<br>
+                                            <p class="blank"></p>
+                                            2.포인트 줘서 획심의 내용을 표현<br>
+                                            <p class="blank"></p>
+                                            3.쿠쿠전자 홈페이지를 반응형 웹표준 적용
+                                        </li>
+                                    </ul>
+                                    <input type="button" class="go_before" value="바로가기">
+                                </li>
+                            </ul>
+                        </li>
+                        <li><img src="imgs/pc_renwal_1.jpg">
+                            <ul id="renewalafter_explain">
+                                <li id="hospafter">
+                                    <h4 class="renewal_title">리뉴얼후</h4>
+                                    <ul class="renewalbe_sub">
+                                        <li>
+                                            개선된 사항:1.제이쿼리 사용으로 배너 제작<br>
+                                            <p class="blank"></p> 2.세로 스크롤바를 사용해서 대표적인 내용표현<br>
+                                            <p class="blank"></p>3.기본 웹의 크기를 1920~1200에 맞는 페이지제작<br>
+                                            <p class="blank"></p> 4. nav의 내용중 획심을 첫화면에 중요도순으로 배치
+                                        </li>
+                                        <li>
+                                            <p>주조색:로고의 푸른색 계열<span class="origin_color">(#0b62a5)</span></p>
+                                        </li>
+                                        <li>
+                                            <p>포인트 색:<span class="sub_color">(#de3e4a)</span></p>
+                                        </li>
+                                    </ul>
+                                    <div class="after_reference">
+                                        <input type="button" class="go_after ref_1" value="참고사이트1"><input type="button" class="go_after ref_2" value="참고사이트2"><input type="button" class="go_after go_page" value="바로가기">
+                                    </div>
+                                </li>
+                                <li id="youngsunafter">
+                                    <h4 class="renewal_title">리뉴얼후</h4>
+                                    <ul class="renewalbe_sub">
+                                        <li>개선해야할 사항:1.플래시를 제거하고 제이쿼리 사용<br>
+                                            <p class="blank"></p>2.세로 스크롤바를 사용해서 대표적인 내용표현<br>
+                                            <p class="blank"></p>3.기본 웹의 크기를 1920~1200에 맞는 페이지제작<br>
+                                            <p class="blank"></p>4. nav의 틀이 있는 블럭 구분선을 제거<br>
+                                            <p class="blank"></p>5. 알아보기 쉬운 무한 갤러리 형식으로 제작<br>
+                                            <p class="blank"></p>6.nav 클릭시 해당하는 영역으로 스크롤 이동
+                                        </li>
+                                        <li>
+                                            <p>주조색:로고의 푸른색 계열<span class="origin_color">(#0b62ff)</span></p>
+                                        </li>
+                                        <li>
+                                            <p>포인트 색:<span class="sub_color">(#de3e4a)</span></p>
+                                        </li>
+                                    </ul>
+                                    <div class="after_reference">
+                                        <input type="button" class="go_after ref_1" value="참고사이트1"><input type="button" class="go_after go_page" value="바로가기">
+                                    </div>
+                                </li>
+                                <li id="musicafter">
+                                    <h4 class="renewal_title">리뉴얼후</h4>
+                                    <ul class="renewalbe_sub">
+                                        <li>개선된 사항:1.웹표준에 맞게 반응형 적용<br>
+                                            <p class='blank'></p>
+                                            2.메뉴를 클릭하지 않고 맛보기로 볼수있도록 구성<br>
+                                            <p class='blank'></p>
+                                            3.기본 웹의 크기를 3000~1920에서는 가로레이아웃 구성
+                                            <br>
+                                            <p class='blank'></p>
+                                            4. 메인배너의 필요없는 것을 줄여서 최소화 하기<br>
+                                            <p class='blank'></p>
+                                            5.1920이하로는 세로 레이아웃으로 구성<br>
+                                            <p class='blank'></p>
+                                            6.hover시 그림이 바귀는 버튼 만들기
+                                        </li>
+                                        <li>
+                                            <p>주조색:회색계열<span class="origin_color">(#ccc)</span></p>
+                                        </li>
+                                        <li>주조색을 고른 이유:사람의 눈에 가장 문안한 회색계열을 사용</li>
+                                        <li>
+                                            <p>포인트색상:노란색계열<span class="sub_color">(#fcc125)</span></p>
+                                        </li>
+                                        <li>보조색을 고른 이유: 무채색 계열 회색에서 고명도 고채도로 가는 <br>
+                                            <p class="blank"></p>노란색 계열을 넣어서눈에 듸고 아기자기함을 넣어서<br>
+                                            <p class="blank"></p>
+                                            교육의 분위기가 험하지 않다라는 것을 표현함
+                                        </li>
+                                    </ul>
+                                    <div class="after_reference">
+                                        <input type="button" class="go_after ref_1" value="참고사이트1"><input type="button" class="go_after ref_2" value="참고사이트2"><input type="button" class="go_after go_page" value="바로가기">
+                                    </div>
+                                </li>
+                                <li id="cocoafter">
+                                    <h4 class="renewal_title">리뉴얼후</h4>
+                                    <ul class="renewalbe_sub">
+                                        <li>개선된 사항:1.웹표준에 맞게 반응형 적용<br>
+                                            <p class="blank"></p>2.포인트 줘서 획심의 내용을 표현<br>
+                                            <p class="blank"></p>3.쿠쿠전자 홈페이지를 반응형 웹표준 적용<br>
+                                            <p class="blank"></p>4.이미지가 아닌 글자 폰트를 사용한 광고<br>
+                                            <p class="blank"></p>5.제이쿼리를 이용한 슬라이드형식으로 보여주는 영역<br>
+                                            <p class="blank"></p>6.움직이는 애니메이션을 적용
+                                        </li>
+                                        <li>
+                                            <p>주조색:회색계열<span class="origin_color">(#ccc)</span></p>
+                                        </li>
+                                        <li>주조색을 고른 이유:사람의 눈에 가장 문안한 회색계열을 사용(#ccc)</li>
+                                        <li>
+                                            <p>보조색:빨강색계열<span class="sub_color red">(#ef2c2c)</span></p>
+                                        </li>
+                                        <li>
+                                            <p>보조색:파란색계열<span class="sub_color blue">(#2c6bea)</span></p>
+                                        </li>
+                                        <li>보조색을 고른 이유: 무채색 계열 회색에서 고명도 고채도로 가는 <br>
+                                            <p class="blank"></p>빨강색 계열을 넣어서눈에 띄고 고압력을 표현함<br>
+                                            <p class="blank"></p>
+                                            파란색 계열을 넣어서눈에 띄고 무압력을 표현함
+                                        </li>
+                                    </ul>
+                                    <div class="after_reference">
+                                        <input type="button" class="go_after go_page" value="바로가기">
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul id="pc_dot">
+                        <li class="dot_on"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li id="lin">
+                <div id="thrid_pic"></div>
+                <h2 class="title eng all_tie">
+                    CERTIFICATE
+                    <div class="line"></div>
+                </h2>
+                <ul id="lin_list">
+                    <li>
+                        웹디자인기능사</li>
+                    <li>
+                        컴퓨터 그래픽스 운용 기능사</li>
+                    <li>
+                        MOS(Mircosoft Office Specialist)</li>
+                    <li>
+                        워드프로세스</li>
+                </ul>
+            </li>
+            <li id="reward">
+                <ul id="list_rew">
+                    <li>
+                        <img src="imgs/sliver.png">
+                        <h2 class="cap">스마트 시티즌</h2>
+                        <h2>은상</h2>
+                        <h2>동의과학대학교</h2>
+                    </li>
+                    <li>
+                        <img src="imgs/sliver.png">
+                        <h2 class="cap">소프트웨어 경진대회(웹)</h2>
+                        <h2>은상</h2>
+                        <h2>동의과학대학교</h2>
+                    </li>
+                    <li>
+                        <img src="imgs/gold.png">
+                        <h2 class="cap">부산 지방 웹개발자 경진대회</h2>
+                        <h2>금상</h2>
+                        <h2>마이스터넷</h2>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="tab_display">
+        <div id="tab_quick" style="display: none;">
+            <h3 id="tab_qui_title">Quick Contact Me</h3>
+            <p id="tab_thank">Thank you for visiting my portofolio</p>
+            <p id="tab_type_name"><span>Name:</span> <input type="text" placeholder="한글성명"></p>
+            <p id="tab_type_number"><span>Tele Number:</span><select>
+                    <option>010</option>
+                    <option>051</option>
+                    <option>02</option>
+                </select><b>-</b><input type="tel" maxlength="4"><b>-</b><input type="tel" maxlength="4"></p>
+            <textarea placeholder="전달할 내용을 입력해주십시오."></textarea>
+            <input type="submit" value="전송하기" id="tab_submit">
+        </div>
+        <div id="tab_quick_but" style="display: none;"></div>
+        <div id="tab_quick_closed">닫기</div>
+        <div id="tab_quick_explain" style="display: none;">
+            <input type="button" value="닫기" id="tab_quick_close">
+            <div class="swiper-containe" id="tab_quick_mask">
+                <ul class="swiper-wrapper" id="tab_quick_wrap">
+                    <li class="swiper-slide"><img src="imgs/quick_explain_tab1.jpg" alt="설명1"></li>
+                    <li class="swiper-slide"><img src="imgs/quick_explain_tab2.jpg" alt="설명1"></li>
+                    <li class="swiper-slide"><img src="imgs/quick_explain_tab3.jpg" alt="설명1"></li>
+                </ul>
+                <div class="swiper-pagination" style="position: fixed;z-index: 999;"></div>
+            </div>
+        </div>
+        <header id="tab_head">
+            <nav>
+                <ul id="nav_mark">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </nav>
+            <ul id="tab_nav">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PROFILE</a></li>
+                <li><a href="#">SKILL</a></li>
+                <li><a href="#">RENEWAL</a></li>
+                <li><a href="#">CERTIFICATION</a></li>
+                <li><a href="#">수상내역</a></li>
+                <li><a href="#">SLOGAN</a></li>
+                <li><a href="#">CONTACT ME</a></li>
+            </ul>
+        </header>
+        <div id="scrol_mask">
+            <div id="scroll_bar">
+                <ul id="tab_wrap">
+                    <li id="tab_home">
+                        <h2 class="tab_title">PORTFOLIO<span>KIM JOO CHAN</span></h2>
+                    </li>
+                    <li id="tab_profile">
+                        <h2 class="tab_title">INTRODUCE</h2>
+                        <ul id="tab_profile_list">
+                            <li>이름:김주찬
+                            </li>
+                            <li>동의과학대학교 : 컴퓨터정보과
+                            </li>
+                            <li>직업전문학교 : 웹 학과 수료
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="tab_skill">
+                        <div id="tab_snow"></div>
+                        <h2 class="tab_title">Program Skills</h2>
+                        <h3 id="prog">PHOTOSHOP</h3>
+                        <ul id="prog_select">
+                            <li class="tab_on">PS</li>
+                            <li>AI</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JQUERY</li>
+                        </ul>
+                        <div id="tab_prog_chart">
+                            <img src="imgs/pschart.png">
+                            <span class="counter">70</span><span id="percent">%</span>
+                        </div>
+                    </li>
+                    <li id="tab_renewal">
+                        <h2 class="tab_title">Renewal Portfolio</h2>
+                        <div class="swiper-containe" id="tab_mask">
+                            <ul class="swiper-wrapper" id="tab_img_wrap">
+                                <li class="swiper-slide">
+                                    <img src="imgs/pc_renwal_1.jpg" title="" />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img src="imgs/pc_renwal_2.jpg" title="" />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img src="imgs/pc_renwal_3.jpg" title="" />
+                                </li>
+                                <li class="swiper-slide">
+                                    <img src="imgs/pc_renwal_4.jpg" title="" />
+                                </li>
+                            </ul>
+                            <div class="swiper-pagination" style="position: fixed;z-index: 999;"></div>
+                        </div>
+                    </li>
+                    <li id="tab_lincense">
+                        <h2 class="tab_title">Certification</h2>
+                        <ul id="tab_lin_name">
+                            <li>웹디자인 기능사</li>
+                            <li>컴퓨터 그래픽 운용기능사</li>
+                        </ul>
+                        <div id="tab_lin_pic"></div>
+                    </li>
+                    <li id="tab_reward">
+                        <ul id="tab_list_rew">
+                            <li>
+                                <img src="imgs/sliver.png">
+                                <h2 class="cap">스마트 시티즌</h2>
+                                <h2>은상</h2>
+                                <h2>동의과학대학교</h2>
+                            </li>
+                            <li>
+                                <img src="imgs/sliver.png">
+                                <h2 class="cap">소프트웨어 경진대회(웹)</h2>
+                                <h2>은상</h2>
+                                <h2>동의과학대학교</h2>
+                            </li>
+                            <li>
+                                <img src="imgs/gold.png">
+                                <h2 class="cap">부산 지방 웹디자인 경진대회</h2>
+                                <h2>금상</h2>
+                                <h2>마이스터넷</h2>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="tab_slogan">
+                        <h2 class="tab_title">Slogan</h2>
+                        <h3 id="tab_slo">시근종태 인지상정 원 시종여시</h3>
+                        <div id="tab_line"></div>
+                        <p id="tab_slo_sub">
+                            시작 근면성실하고 끝이 날때는 태만해지는 것이<br>사람의 마음이니 끝날 때까지 시작과 같이 해라
+                        </p>
+                    </li>
+                    <li id="tab_contact">
+                        <h2 class="tab_title">Contact me</h2>
+                        <ul id="tab_cont_name">
+                            <li>
+                                <p>전화번호:010-6727-0240</p>
+                            </li>
+                            <li>
+                                <p>이메일:jc5240240@naver.com</p>
+                            </li>
+                        </ul>
+                        <div id="tab_cont_pic">
+                            <img src="imgs/display_tab_7.jpg">
+                        </div>
+                        <div id="tab_copyright">
+                            <address>Copyrightⓒ 2018. KimJooChan. All rights reserved.</address>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body></html>
