@@ -17,7 +17,7 @@
     <script src="js/jquery.mousewheel.js"></script>
     <script src="js/jquery.animateNumber.js"></script>
     <script src="js/swiper.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/index.js?v=1"></script>
     <script src="js/tab.js"></script>
 </head>
 
@@ -95,35 +95,50 @@
                     <div id="skill_mask">
                         <ul id="skill_chart">
                             <li>
-                                <h1 class="txt">Node.js</h1>
+                                <div class="txtWrap">
+                                    <h1 class="txt">Node.js</h1>
+                                    <p class="sub_txt">(게시판 구현)</p>
+                                </div>
                                 <div class="graph">
                                     <img src="imgs/graph1.png">
                                     <h3 class="reward">??</h3>
                                 </div>
                             </li>
                             <li>
-                                <h1 class="txt">Vue.js</h1>
+                                <div class="txtWrap">
+                                    <h1 class="txt">Vue.js</h1>
+                                    <p class="sub_txt">(기본적인 홈페이지 제작)</p>
+                                </div>
                                 <div class="graph">
                                     <img src="imgs/graph2.png">
                                     <h3 class="reward">??</h3>
                                 </div>
                             </li>
                             <li>
-                                <h1 class="txt">FrontEnd</h1>
+                                <div class="txtWrap">
+                                    <h1 class="txt">FrontEnd</h1>
+                                    <p class="sub_txt">(CSS,JS능숙)</p>
+                                </div>
                                 <div class="graph">
                                     <img src="imgs/graph.png">
                                     <h3 class="reward">??</h3>
                                 </div>
                             </li>
                             <li>
-                                <h1 class="txt">CI(php)</h1>
+                                <div class="txtWrap">
+                                    <h1 class="txt">CI(php)</h1>
+                                    <p class="sub_txt">(게시판 구현)</p>
+                                </div>
                                 <div class="graph">
                                     <img src="imgs/graph3.png">
                                     <h3 class="reward">??</h3>
                                 </div>
                             </li>
                             <li>
-                                <h1 class="txt">SQL</h1>
+                                <div class="txtWrap">
+                                    <h1 class="txt">SQL</h1>
+                                    <p class="sub_txt">(기본적은 CRUD구현)</p>
+                                </div>
                                 <div class="graph">
                                     <img src="imgs/graph5.png">
                                     <h3 class="reward">??</h3>
@@ -471,17 +486,22 @@
                     <li id="tab_skill">
                         <div id="tab_snow"></div>
                         <h2 class="tab_title">Program Skills</h2>
-                        <h3 id="prog">Node.js</h3>
-                        <ul id="prog_select">
-                            <li class="tab_on">Node.js</li>
-                            <li>Vue.js</li>
-                            <li>FrontEnd</li>
-                            <li>CI(php)</li>
-                            <li>SQL</li>
-                        </ul>
-                        <div id="tab_prog_chart">
-                            <img src="imgs/pschart.png">
-                            <span class="counter">70</span><span id="percent">%</span>
+                        <div class="skill_name">
+                            <h3 id="prog">Node.js</h3>
+                            <h3 class="sub_des">(게시판 구현)</h3>
+                        </div>
+                        <div class="center">
+                            <ul id="prog_select">
+                                <li class="tab_on">Node.js</li>
+                                <li>Vue.js</li>
+                                <li>FrontEnd</li>
+                                <li>CI(php)</li>
+                                <li>SQL</li>
+                            </ul>
+                            <div id="tab_prog_chart">
+                                <img src="imgs/pschart.png">
+                                <span class="counter">70</span><span id="percent">%</span>
+                            </div>
                         </div>
                     </li>
                     <li id="tab_renewal">

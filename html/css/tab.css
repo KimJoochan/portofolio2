@@ -396,13 +396,20 @@
         float: left;
         color: #eaeaea;
     }
-
-    #prog_select {
-        width: 200px;
+    #tab_skill>.center{
+        width: auto;
         height: auto;
-        position: absolute;
-        top: 40%;
-        left: 50px;
+        float: left;
+        margin-top: 60px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    #prog_select {
+        width: 130px;
+        height: auto;
+        float: left;
     }
 
     #prog_select > li.tab_on {
@@ -419,23 +426,36 @@
         cursor: pointer;
         color: #eaeaea;
     }
-
-    #prog {
+    .skill_name{
+        width: 100%;
+        height: auto;
+        float: left;
+        margin-top: 30px;
+    }
+    .skill_name>#prog{
+        margin: 0;
         width: 100%;
         float: left;
         text-align: center;
-        margin-top: 30px;
-        font-size: 30px;
-        font-weight: 100;
-        color: #eaeaea;
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
     }
+    .skill_name>.sub_des{
+        margin: 0;
+        width: 100%;
+        float: left;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 100;
+        color: #ccc;
+    }
+    
 
     #tab_prog_chart {
-        width: 33.3%;
+        width: 33.3vw;
         height: auto;
         float: left;
-        margin-left: 33%;
-        margin-top: 100px;
         position: relative;
     }
 
@@ -450,7 +470,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 80px;
+        font-size: 60px;
         color: #fff;
     }
 
@@ -459,7 +479,7 @@
         top: 50%;
         left: 60%;
         transform: translate(50%, -50%);
-        font-size: 50px;
+        font-size: 30px;
     }
 
     /*테블릿 네번째 화면 리뉴얼*/
@@ -506,6 +526,7 @@
 
     /*테블릿 다섯번째 화면 자격증*/
     #tab_lincense {
+        overflow: hidden;
         position: relative;
     }
 
@@ -547,7 +568,8 @@
     }
 
     /*테블릿 수상*/
-    #tab_reward {
+    #tab_wrap > li#tab_reward {
+        height: 900px;
         background: url(../imgs/lawn.jpg) no-repeat center center;
         background-size: cover;
     }
@@ -743,15 +765,19 @@
     }
 
     #tab_wrap {
-        height: 700%;
+        height: 3825px;
     }
 
     #tab_wrap > li {
-        height: 16%;
+        height: 600px;
     }
 
     /*자기소개 모바일일때*/
-    #tab_profile {
+    #tab_home{
+        height: 300px;
+    }
+    #tab_wrap > li#tab_profile {
+        height: 800px;
         background: url(../imgs/display_mb_2.jpg) no-repeat center center;
         background-size: cover;
     }
@@ -760,6 +786,9 @@
         width: auto;
         margin-left: 5%;
         margin-top: 30%;
+        background-color: rgba(255,255,255,0.9);
+        padding: 15px;
+        box-sizing: border-box;
     }
 
     #tab_profile_list > li {

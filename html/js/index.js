@@ -707,7 +707,7 @@ window.open("https://kimjoochan.github.io/academy1coco/html/");
                             number: 70
                         }, 1000);
                         setTimeout(function () {
-                            sclf.find('.reward').html('70%')
+                            sclf.find('.reward').html('70%<br>게시판 연동 구현')
                         }, 1100)
                     } else {
                         return;

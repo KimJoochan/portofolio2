@@ -125,6 +125,7 @@ $(document).ready(function () {
         });
         if (k == 0) {
             $('#prog').html('Node.js');
+            $('.sub_des').text('게시판 구현')
             $('.counter').animateNumber({
                 number: 70
             }, 1000);
@@ -138,6 +139,7 @@ $(document).ready(function () {
             }, 500);
         } else if (k == 1) {
             $('#prog').html('Vue.js');
+            $('.sub_des').text('기본적인 홈페이지 제작');
             $('.counter').animateNumber({
                 number: 73
             }, 1000);
@@ -151,6 +153,7 @@ $(document).ready(function () {
             }, 500);
         } else if (k == 2) {
             $('#prog').html('FrontEnd');
+            $('.sub_des').text('CSS,JS 능숙');
             $('.counter').animateNumber({
                 number: 90
             }, 1000);
@@ -164,6 +167,7 @@ $(document).ready(function () {
             }, 500);
         } else if (k == 3) {
             $('#prog').html('CI(php)');
+            $('.sub_des').text('게시판 구현');
             $('.counter').animateNumber({
                 number: 87
             }, 1000);
@@ -177,6 +181,7 @@ $(document).ready(function () {
             }, 500);
         } else if (k == 4) {
             $('#prog').html('SQL');
+            $('.sub_des').text('기본적인 CRUD구현');
             $('.counter').animateNumber({
                 number: 85
             }, 1000);
